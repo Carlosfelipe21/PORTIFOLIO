@@ -1,0 +1,215 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blueviolet;
+    background-image: url("https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded_w200.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color: rgb(28, 86, 222);
+    background-image: url("https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded_w200.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5vw 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+ul {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+
+.home, .sobre, .curso, .projetos {
+    background-color: #1e2a78;
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 2px 4px 10px #4444fa;
+    transition: 0.3s;
+    cursor: pointer;
+    position: static;
+}
+
+.home:hover, .sobre:hover, .curso:hover, .projetos:hover {
+    background-color: #2a3bd1;
+    box-shadow: 0 6px 14px rgba(51, 63, 191, 0.7);
+    transform: scale(1.05);
+}
+
+
+.logo, .chamas {
+    width: 6vw;
+    max-width: 80px;
+    border-radius: 70px;
+    box-shadow: 0 6px 12px #4444fa;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chamas:hover {
+    box-shadow: 0 6px 12px #0080ff;
+    transform: scale(1.05);
+}
+
+
+.inicio, .info-home {
+    padding: 10vw 5vw;
+    text-align: center;
+}
+
+.foto {
+    width: 30vw;
+    max-width: 200px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px #4444fa;
+    margin: 2vw auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.nome {
+    font-size: 4vw;
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 0 6px 12px #4444fa;
+    margin-top: 1vw;
+    font-family: "Lobster", sans-serif;
+}
+
+.programador {
+    color: aliceblue;
+    font-family: "Tagesschrift", system-ui;
+    font-size: 2vw;
+    text-align: center;
+    box-shadow: 0 6px 12px #4444fa;
+}
+
+.frase {
+    color: aliceblue;
+    font-family: "Playwrite DK Loopet", cursive;
+    text-align: center;
+    font-size: 1.5vw;
+    box-shadow: 0 6px 12px #4444fa;
+    margin-top: 1vw;
+}
+
+
+.whats, .insta {
+    position: fixed;
+    right: 2vw;
+    width: 10vw;
+    max-width: 75px;
+    border-radius: 100px;
+    box-shadow: 0 6px 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.whats {
+    bottom: 6vw;
+    box-shadow: 0 6px 12px rgb(11, 165, 42);
+}
+.whats:hover {
+    box-shadow: 0 6px 12px rgb(0, 255, 110);
+    transform: scale(1.08);
+}
+
+.insta {
+    bottom: 14vw;
+    box-shadow: 0 6px 12px #db0da8;
+}
+.insta:hover {
+    box-shadow: 0 6px 12px #ff005d;
+    transform: scale(1.05);
+}
+
+
+.div-home {
+    padding: 5vw;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/698/025/small/blue-fire-corner-effect-free-video.jpg");
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 6px 14px #4444fa;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.info-sobre {
+    font-size: 3vw;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    box-shadow: 0 6px 12px #4444fa;
+    margin-top: 3vw;
+}
+
+.mensagem {
+    color: #ffffff;
+    font-size: 1.8vw;
+    font-family: "Tagesschrift", system-ui;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .nome {
+        font-size: 6vw;
+    }
+
+    .programador, .frase, .mensagem {
+        font-size: 4vw;
+    }
+
+    .info-sobre {
+        font-size: 5vw;
+    }
+
+    .foto {
+        width: 50vw;
+    }
+
+    .logo, .chamas {
+        width: 10vw;
+    }
+
+    .home, .sobre, .curso, .projetos {
+        font-size: 4vw;
+        padding: 2vw 3vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .whats {
+        bottom: 4vw;
+    }
+
+    .insta {
+        bottom: 24vw; 
+    }
+}
